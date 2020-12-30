@@ -28,5 +28,14 @@ int main()
     if (num1 >= num2)
         std::cout << num1 << " Eh maior igual a " << num2 << std::endl;
     
+    //Procedência dos operadores vistos.
+    // 1º ---> ()
+    // 2º ---> *, /, % Lidos da esquerda para direita.
+    // 3º ---> +, - Lidos da esquerda para direita.
+    // 4º ---> >> ou << Lidos da esquerda para direita.
+    // 5º ---> <, <=, >, >= Lidos da esquerda para direita.
+    // 6º ---> ==, != Lidos da esquerda para direita.
+    // 7º ---> = Lido da direita para esquerda.
+    
     return 0;
 }
