@@ -9,7 +9,7 @@ int main()
     //Leitura da variável.
     std::cout << "Digite seu primeiro numero: "; //Leitura.
     std::cin >> num1; //Atribuição da leitura.
-
+    // >> indica inserção. Ex: cin(entrada de dados) deve inserir o valor em num1.
     std::cout << "Digite seu segundo numero: "; //Leitura.
     std::cin >> num2; //Atribuição da leitura.
 
