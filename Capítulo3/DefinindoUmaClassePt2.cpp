@@ -11,7 +11,7 @@ public:
         cout << "\nBem-Vindo ao Livro De Notas para \"" << nomeDoCurso << "\"" << endl;
     }
 };
-
+//Diagrama UML : https://prnt.sc/wdpcje
 int main()
 {
     //Cria-se uma string para armazenar o nome do curso
