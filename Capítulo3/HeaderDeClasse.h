@@ -1,3 +1,5 @@
+#ifndef HEADERDECLASSE_H //Se o header não estiver definido ele irá realizar o código, caso já esteja não será implementado nada.
+#define HEADERDECLASSE_H
 #include <iostream>
 
 class Conta 
@@ -29,8 +31,9 @@ public:
     {
         return nome;
     }
-    
+
 private:
     std::string nome;
     int valor {0};
 };
+#endif
