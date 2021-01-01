@@ -19,7 +19,8 @@ public:
         nomeCurso = nome;
     }
     
-    string obterNomeCurso()
+    string obterNomeCurso() const //Ao se aplicar const apos o parâmetro é indicado que essa função não deve poder modificar o objeto que está inserida.
+    //Caso ocorra de modificar será retornado um erro de compilação imediato. Tente aplica-lo no setarNomeDoCurso().
     {
         return nomeCurso;
     }
