@@ -9,7 +9,7 @@ void quadradoPorReferencia(int &num);
 //Fornece à função chamada a capacidade de acessar os dados do chamador e modificar.
 //Oferece um desempenho melhor que passagem por valor, porém a segurança é diminuida já que os dados podem corromper.
 //Para melhorar a segurança ao passar por referência utilize do const para evitar modificações e ganhar o desempenho.
-//Um parâmetro de referência é o "alias"
+//Um parâmetro de referência é o "alias/apelido"
 //Para indicar que o parâmetro é uma referência coloque um '&' depois do tipo do parâmetro.
     // int &count. "count é uma referência para um int".
 //Logo, mencionar a variável no corpo da função por seu nome de parâmetro na realidade referencia a variável original da função chamadora.
@@ -28,6 +28,7 @@ int main()
     quadradoPorReferencia(y);
     cout << "x eh: " << x << " y eh: " << y << endl;//Seus valores são modificados e agora serão 4 e 16.
 
+    return 0;
 }
 //Cria uma cópia de num e retorna o valor da cópia.
 int quadradoPorValor(int num)
