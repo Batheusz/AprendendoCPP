@@ -13,5 +13,6 @@ int main()
     {
         cout << i << " ";
     }
+    //Sempre que vc precisar utilizar o numero de elemento do array para algo no seu código é recomendado o uso de um for com contador ao invés desse baseado no alcance.
     return 0;
 }
