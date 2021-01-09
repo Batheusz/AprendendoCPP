@@ -4,6 +4,8 @@ using namespace std;
 
 //Arrays são estruturas de dados consistindo em itens de dados relacionados do mesmo tipo.
 //Arrays possuem sempre o mesmo tamanho por toda execução do programa.
+//Cuidado ao passar arrays completos para funções, pois eles são passados por referência, logo podem ter seus valores modificados.
+//Os elementos de um array são passados por valor para funções.
 //https://prnt.sc/wj5lvw
 int main()
 {
