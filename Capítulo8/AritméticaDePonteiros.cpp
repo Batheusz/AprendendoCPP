@@ -42,4 +42,10 @@ int main()
     x = notaPtr - valorPtr;
     cout << "X = " << x << endl;
     // Tome cuidado que valores negativos podem ser gerados.
+
+    cout << "Valor apontado em valor eh: " << *(valorPtr - 2) << endl; // Podemos realizar essas expressões chamadas de deslocamento de ponteiros
+    valorPtr[2]; // Ponteiros também podem receber referências aos elementos do array que apontam.
+    cout << "Valor apontado em valor eh: " << *valorPtr << endl;
+
+
 }
