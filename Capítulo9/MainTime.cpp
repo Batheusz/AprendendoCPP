@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdexcept>
-#include "Time.cpp"
+#include "Time.h"
 using namespace std;
 
 int main()
@@ -23,3 +23,4 @@ int main()
     MyTime.setTime(26, 60, 54);// Causará a execução do throw e exibirá nossa mensagem de erro.
     cout << "Tempo :\n" << MyTime.printUniversal() << MyTime.printStandard();
 }
+// g++ -o Time Time.cpp MainTime.cpp use esse comando para executar a compilação correta
