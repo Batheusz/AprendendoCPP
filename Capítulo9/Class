@@ -1,0 +1,41 @@
+Objetos de classes podem se relacionar entre si. Por exemplo, digamos que você deseja criar uma classe Alarme, mas já possui a classe Horario.
+A resposta óbvia é reutilizar o código de Horario para Alarme, essa é uma dar vantagens de POO(Programação Orientada a Objetos).
+Para isso, será necessário associar as classes Alarme e Horario, dentro dessa associação podemos ter uma associação de Composição ou de Agregação.
+
+    Composição: É quando um objeto é formado por outros objetos. Ou seja, suas classes o compõem e sem elas ele não existe. Por exemplo, o objeto Celular
+    não existe sem o objeto Processador, Bateria, Memória, Placa de Circuito, etc.
+
+    Agregação: É quando um objeto possui outros objetos, mas não é dependente deles para existir. Por exemplo, o objeto Gaveta pode existir mesmo que o objeto
+    Roupa não esteja nele, pois ele não é composto de roupas e sim de madeira.
+
+    Obs: Ao se utilizar de classes para criar membros de outras classes é interessante deixa-los como private para não violar o encapsulamento.
+
+Encapsulamento é criar uma proteção do usuário do código e do código do usuário. Por exemplo, uma pilha possui uma capsula para proteger você de tocar nos componentes dela e
+estraga-la, além disso, você não precisa saber como a pilha funciona internamente para utiliza-la. Para esses motivos que serve o encapsulamento.
+
+    Uma classe possui três tipos de definições para seus dados membro. Private, public e protected.
+        Private : Somente a própia classe possui acesso aos dados definidos como private e só suas funçoes-membro/métodos podem modifica-los.
+        Public : Qualquer parte do código possui acesso aos dados definidos como public e podem modifica-los.
+        Protected : Somente a própia classe e classes derivadas(Herança será visto em seguida) possuem acesso aos dados.
+
+    Obs: Existe também a definição de uma função friend de uma classe. Essa função não é membro da classe, mas possue acesso aos seus elementos public e não public.
+        Para declarar uma friend preceda a classe com a palavra-chave friend:
+            friend class Classe;
+        A amizade da Classe B está garantida para Classe A, mas a Classe A deve explicitar que B é sua amiga.
+        Amizade não é uma mão dupla, A classe A pode ser amiga de B, mas B pode não ser sua amiga.
+        Amizade não é transitiva, ou seja, Se A é amiga de B e B é amiga de C, não podemos dizer que A é amiga de C.
+
+        Definindo uma função friend:
+
+            class Classe
+            {
+                friend tipo função(parâmetros);
+            private:
+            . 
+            .
+            .
+            public:
+            .
+            .
+            .
+            };
