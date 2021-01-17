@@ -24,3 +24,4 @@ int main()
     cout << "Tempo :\n" << MyTime.printUniversal() << MyTime.printStandard();
 }
 // g++ -o Time Time.cpp MainTime.cpp use esse comando para executar a compilação correta
+// g++ -o NomeDoExe NomeImplementação NomeMain
