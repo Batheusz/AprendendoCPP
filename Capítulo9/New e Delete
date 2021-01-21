@@ -1,0 +1,7 @@
+O C++ permite aos programadores controlar a alocação e desalocação de memória.
+Isso é conhecido como gerenciamento de memória dinâmico e realizado por new e delete.
+Por exemplo se utilizarmos um array de 25 char para pegar um nome, pode ser que o nome ocupe menos espaço doq o reservado.
+Podemos usar new para alocar a quantidade exata de memória necessária para armazenar os nomes em tempo de execução.
+Isso faz com que o array(ou qualquer tipo) seja criado no armazenamento livre(heap), uma região da memória atribuída a
+cada programa para armazernar objetos criados em tempo de execução, então podemos usar um ponteiro para pegar seus dados
+e então quando não precisarmos mais podemos desalocar a memória com delete.
